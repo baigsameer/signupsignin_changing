@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+   <div id="sec-1">
+       <h1>Sign UP</h1>
+        <form action="">
+            <label>First Name</label>
+            <input type="text"  placeholder="Enter your first name ">
+            <label>Last Name</label>
+            <input type="text"  placeholder="Enter your last name">
+            <label>Email</label>
+            <input type="email"  placeholder="Enter your email address">
+            <label>Password</label>
+            <input type="password"  placeholder="Enter your password">
+            <label>Confirm Password</label>
+            <input type="password"  placeholder="Enter your password again">
+            <button>Submit</button>
+            <!-- <input type="button" value="Submit"> -->
+        </form>
+        <p class="para_2">Already have account? <a href="#" onclick="signin()">signIn</a></p>
+   </div>
+
+
+
+ <!-- ============================================= Second Form for sign in ===============================--->
+ 
+ <div id="sec-2">
+    <h1>Login</h1>
+    <form action="">
+        <label>Email</label>
+            <input type="email"  placeholder="Enter your email address">
+            <label>Password</label>
+            <input type="password"  placeholder="Enter your password">
+            <label>Confirm Password</label>
+            <input type="password"  placeholder="Enter your password again">
+            <button class="subm">Submit</button>
+             
+            <p class="para_2_lg">Already have account? <a href="#" onclick="signup()">signUp</a></p>
+    </form>
+    
+</div>
+
+
+
+
+
+
+
+
+<script>
+    var x = document.getElementById("sec-1")
+    var y = document.getElementById("sec-2")
+
+function signup() {
+  if (x.style.display = "none") {
+    x.style.display = "block";
+    y.style.display = "none"
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function signin() {
+    
+  if (y.style.display = "none") {
+    y.style.display = "block";
+    x.style.display = "none"
+  } else {
+    y.style.display = "block";
+  }
+}
+</script>
+</body>
+</html>
